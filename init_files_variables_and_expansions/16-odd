@@ -1,8 +1,2 @@
 #!/bin/bash
-mapfile -t lines
-n=0
-while [ $n -lt ${#lines[@]} ]
-do
-printf "%s\n" "${lines[n]}"
-n=$((n+2))
-done
+paste - - | cut -f1
