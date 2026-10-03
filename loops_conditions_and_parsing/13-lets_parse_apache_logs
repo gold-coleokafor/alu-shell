@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# This script displays IP and HTTP status code from an Apache log
+awk '{print $1, $9}' loops_conditions_and_parsing/apache-access.log
